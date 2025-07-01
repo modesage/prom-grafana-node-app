@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 10s # How frequently to scrape targets
+
+scrape_configs:
+  - job_name: "monitor-app"
+    static_configs:
+      - targets: ["monitor-app:3000"] # container_name:port
+    scheme: http
+    metrics_path: /metrics
+    basic_auth:
+      username: skin
+      password: asiimov

@@ -1,0 +1,12 @@
+node_modules
+bun.lockb
+
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+prometheus.yml
+
+.env
+*.log
+README.md
